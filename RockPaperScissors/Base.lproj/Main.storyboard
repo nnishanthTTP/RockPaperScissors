@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RockPaperScissors" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQK-QF-VBS">
+                                <rect key="frame" x="115" y="155" width="162" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="70"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZPG-G9-o44">
+                                <rect key="frame" x="16" y="257" width="361" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="leb-Q2-GmM">
+                                <rect key="frame" x="47" y="361" width="94" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="👊">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="rockMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UmZ-EP-zwH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyS-By-uui">
+                                <rect key="frame" x="149" y="361" width="94" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="✋">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="paperMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y2r-z4-ceY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbl-jl-Db4">
+                                <rect key="frame" x="251" y="361" width="94" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="✌️">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="scissorMove:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOz-cY-YBN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lr1-gZ-jlG">
+                                <rect key="frame" x="121" y="521" width="151" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Play Again">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wt5-hv-2Tm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="gameStatusLabel" destination="ZPG-G9-o44" id="CJ3-Dl-suW"/>
+                        <outlet property="opponentLabel" destination="JQK-QF-VBS" id="JPx-Ln-YFJ"/>
+                        <outlet property="paperButton" destination="nyS-By-uui" id="Lnu-2P-VAr"/>
+                        <outlet property="playAgainButton" destination="lr1-gZ-jlG" id="g9q-wZ-Vrc"/>
+                        <outlet property="rockButton" destination="leb-Q2-GmM" id="8UT-tK-Tyn"/>
+                        <outlet property="scissorsButton" destination="sbl-jl-Db4" id="qEc-iR-lOP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.1145038167939" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
